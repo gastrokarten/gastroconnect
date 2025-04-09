@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GastroConnect - Digitale Speisekarten</title>
+  <style>
+    :root {
+      --warm-blue: #1E3A8A; /* Dunkles Blau mit wärmerem Ton */
+      --soft-orange: #F97316; /* Akzentfarbe für Wärme */
+      --cream-white: #FFF7ED; /* Sanftes Weiß für Hintergrund */
+      --light-gray: #F3F4F6; /* Heller, warmer Grauton */
+      --text-dark: #1F2937; /* Dunkelgrau für bessere Lesbarkeit */
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: var(--cream-white);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--warm-blue), var(--soft-orange));
+      color: var(--cream-white);
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2.5rem;
+      background-color: var(--light-gray);
+      padding: 1.5rem;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    nav a {
+      color: var(--warm-blue);
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--soft-orange);
+    }
+
+    .hero {
+      padding: 3rem 2rem;
+      text-align: center;
+      background-color: var(--cream-white);
+    }
+
+    .hero h2 {
+      color: var(--warm-blue);
+      font-size: 2rem;
+    }
+
+    .section {
+      padding: 2.5rem;
+      background-color: var(--light-gray);
+      margin: 2rem auto;
+      border-radius: 1.5rem;
+      max-width: 1000px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .pricing {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .package {
+      border: 3px solid var(--warm-blue);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      background-color: var(--cream-white);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .package:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .package h3 {
+      color: var(--soft-orange);
+      margin-top: 0;
+    }
+
+    .faq-item strong {
+      color: var(--warm-blue);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, var(--warm-blue), var(--soft-orange));
+      color: var(--cream-white);
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GastroConnect</h1>
+    <p>Digitale Speisekarten per QR-Code</p>
+  </header>
+
+  <nav>
+    <a href="#vorteile">Vorteile</a>
+    <a href="#preise">Preise</a>
+    <a href="#faq">FAQ</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Modern. Digital. Einfach.</h2>
+    <p>Mit GastroConnect digitalisieren Sie Ihre Speisekarte – schnell, einfach und flexibel per QR-Code. Immer aktuell, immer professionell.</p>
+  </section>
+
+  <section id="vorteile" class="section">
+    <h2>Ihre Vorteile mit GastroConnect</h2>
+    <ul>
+      <li>Digitale Speisekarte jederzeit aktuell</li>
+      <li>Kein Nachdrucken bei Preisänderungen</li>
+      <li>Individuelles QR-Code Design im Firmenlook</li>
+      <li>QR-Codes als Tischaufsteller, Aufkleber oder Druckvorlage</li>
+      <li>Einfache Verwaltung über unser Kundenportal</li>
+    </ul>
+  </section>
+
+  <section id="preise" class="section">
+    <h2>Preispakete</h2>
+    <div class="pricing">
+      <div class="package">
+        <h3>Starter</h3>
+        <p>€49 einmalig</p>
+        <ul>
+          <li>1 QR-Code Druckvorlage</li>
+          <li>1x monatliche Aktualisierung</li>
+        </ul>
+      </div>
+      <div class="package">
+        <h3>Profi</h3>
+        <p>€99 einmalig + €10/Monat</p>
+        <ul>
+          <li>3 QR-Codes (Aufsteller + Aufkleber)</li>
+          <li>Unbegrenzte Aktualisierungen</li>
+          <li>Design im Firmenlook</li>
+        </ul>
+      </div>
+      <div class="package">
+        <h3>Premium</h3>
+        <p>€199 einmalig + €15/Monat</p>
+        <ul>
+          <li>Unbegrenzte QR-Codes</li>
+          <li>Individuelle Designs</li>
+          <li>Persönlicher Support</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <h2>Häufig gestellte Fragen</h2>
+    <div class="faq-item">
+      <strong>Wie funktioniert die Aktualisierung?</strong>
+      <p>Sie senden uns Ihre Änderungen – wir aktualisieren Ihre Karte in Echtzeit.</p>
+    </div>
+    <div class="faq-item">
+      <strong>Kann ich mein eigenes Design verwenden?</strong>
+      <p>Ja! Unsere personalisierten QR-Codes passen sich Ihrem Firmenlook an.</p>
+    </div>
+    <div class="faq-item">
+      <strong>Wie erhalte ich meine QR-Codes?</strong>
+      <p>Sie bekommen sie digital oder als physische Aufsteller/Aufkleber per Post.</p>
+    </div>
+  </section>
+
+  <section id="kontakt" class="section">
+    <h2>Kontakt</h2>
+    <p><strong>Herr Philipp Buhrandt</strong></p>
+    <p>Mobil: <a href="tel:+4915225701532">0152 25701532</a></p>
+    <p>Email: <a href="mailto:gastrokarten5@gmail.com">gastrokarten5@gmail.com</a></p>
+  </section>
+
+  <footer>
+    © 2025 GastroConnect – Digitale Lösungen für die Gastronomie
+  </footer>
+</body>
+</html>
