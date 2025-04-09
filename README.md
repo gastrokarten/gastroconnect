@@ -32,5 +32,5 @@ Willkommen bei **GastroConnect** – der digitalen Lösung für moderne Gastrono
 
 ## 🌐 GitHub Pages Vorschau
 
-Sobald GitHub Pages aktiviert ist, kannst du die Website hier aufrufen:
+Sobald GitHub Pages aktiviert ist, kannst du die Website hier aufrufen: https://gastrokarten.github.io/gastroconnect/
 
